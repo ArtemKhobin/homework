@@ -19,6 +19,23 @@ class Main {
 
     //ArraysUtils.print(ArraysUtils.transpose(array3));
 
-    ArraysUtils.print(ArraysUtils.createSpiral(7, 8));
+    //ArraysUtils.print(ArraysUtils.createSpiral(7, 8));
+
+
+
+    Author author1 = new Author("Ololosha Ololoev", "ololo@gmail.com");
+    Author author2 = new Author("Vasya Vasin", "vasya@gmail.com");
+    Author author3 = new Author("Ololosha Ololoev", "ololo@gmail.com");
+
+    Book book1 = new Book("Clear code", 10, author1);
+    Book book2 = new Book("Design patterns", 10, new Author[]{author1, author2});
+    Book book3 = new Book("Clear code", 10, author1);
+
+    System.out.println(author1.equals(author3));
+
+    System.out.println(book1);
+    System.out.println(book2);
+
+    System.out.println(book1.equals(book3));
   }
 }
